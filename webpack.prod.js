@@ -9,9 +9,9 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
+    publicPath: "/photography/",
     filename: "js/[name].[contenthash].js",
     path: path.resolve(__dirname, "build"),
-    publicPath: "/",
   },
   optimization: {
     minimizer: [

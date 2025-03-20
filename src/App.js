@@ -1,7 +1,7 @@
-import React, { Suspense, lazy, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Route, Routes, Navigate, useLocation } from "react-router-dom";
-import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
+const Home = React.lazy(() => import("./pages/Home/Home"));
 
 const App = () => {
   const location = useLocation();
@@ -9,10 +9,10 @@ const App = () => {
   return (
     <>
       <div style={{ minHeight: "90vh" }}>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route exact path="/" element={<Navigate to="/home" />} />
-            <Route exact path="/home" element={<Home />} />
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </Suspense>
         <Footer />

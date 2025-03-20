@@ -18,6 +18,10 @@
   },
   "scripts": {
     "start": "PORT=4000 BROWSER=none react-scripts start",
+    "build": "webpack --config webpack.prod.js",
+    "devstart": "webpack serve  --config webpack.dev.js",
+    "npmbuild": "react-scripts build",
+    "analyze-build-bundle": "node scripts/analyze_build_bundle.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
