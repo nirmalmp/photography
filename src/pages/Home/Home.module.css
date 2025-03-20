@@ -1,0 +1,169 @@
+.wrapper {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+.homeWrapper {
+  background-color: var(--c1);
+  height: 600px;
+  width: 100%;
+  display: flex;
+}
+
+.captureWrapper {
+  margin: 70px 100px;
+  border-radius: 25px;
+  background-color: var(--c2);
+  height: calc(100% - 140px);
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+.captureText {
+  font-size: 90px;
+  font-weight: 800;
+  margin: 20px 50px;
+}
+
+.taglineText {
+  font-size: 30px;
+  margin: auto 0 20px 50px;
+  width: 50%;
+}
+
+.photographyWrapper {
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+.photographyLeft {
+  width: 50%;
+  background-color: var(--c4);
+}
+
+.photographyRight {
+  width: 50%;
+  display: flex;
+}
+
+.photographyTextWrapper {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.photographyHeader {
+  font-size: 30px;
+}
+
+.photographyText {
+  font-size: 20px;
+}
+
+.watch {
+  font-size: 18px;
+  color: var(--c3);
+}
+
+.priceWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.priceHeader {
+  font-size: 60px;
+}
+
+.touchWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.touchHeader {
+  font-size: 60px;
+}
+
+.touchText {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.touchSubText {
+  margin: 5px auto;
+  font-size: 18px;
+}
+
+.contactWrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--c1);
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInnerWrapper {
+  margin: 70px 300px;
+  border-radius: 25px;
+  background-color: var(--c2);
+  height: fit-content;
+  width: calc(100% - 600px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contactHeader {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  height: fit-content;
+  text-align: left;
+}
+
+.inputText {
+  font-size: 18px;
+}
+
+.inputWrapper {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: calc(100% - 200px);
+  justify-content: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  height: fit-content;
+  text-align: left;
+}
+
+.textInput {
+  resize: none;
+}
